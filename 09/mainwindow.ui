@@ -1,0 +1,5088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>432</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>233</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>233</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>233</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>240</red>
+        <green>233</green>
+        <blue>240</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_61">
+    <item>
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="currentIndex">
+       <number>6</number>
+      </property>
+      <widget class="QWidget" name="Areapage">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款类别：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GareaTypeCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>公积金贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>商业贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>组合贷款</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算方式：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GareaWayCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>按房屋面积、单价计算</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>按贷款总额计算</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>房屋单价：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="GareaMoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="statusTip">
+              <string/>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>元/平方米</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_4" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QLabel" name="label_4">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>房屋面积：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="GareaSizeEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="text">
+              <string>平方米</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_5" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭成数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GareaPercent">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>8成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2成</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_6" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭年数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GareaYearCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>25年（300期)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24年（288期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>23年（276期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>22年（264期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>21年（252期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20年（240期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年（228期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>18年（216期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>17年（204期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16年（192期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年（180期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年（168期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>13年（156期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年（144期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>11年（132期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10年（120期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9年（108期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8年（96期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7年（84期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6年（72期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5年（60期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4年（48期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3年（36期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2年（24期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1年（12期）</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="GareaRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QLabel" name="label_9">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GareaRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="GareaRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_15">
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GareagroupBox">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="title">
+           <string>还款方式</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <widget class="QRadioButton" name="GareaRateBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="GareaMoneyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本金</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_14" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QPushButton" name="GareaBeginBtn">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="palette">
+              <palette>
+               <active>
+                <colorrole role="Button">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="ButtonText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </active>
+               <inactive>
+                <colorrole role="Button">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="ButtonText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>0</red>
+                   <green>0</green>
+                   <blue>0</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </inactive>
+               <disabled>
+                <colorrole role="Button">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="ButtonText">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>120</red>
+                   <green>120</green>
+                   <blue>120</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Base">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+                <colorrole role="Window">
+                 <brush brushstyle="SolidPattern">
+                  <color alpha="255">
+                   <red>255</red>
+                   <green>255</green>
+                   <blue>255</blue>
+                  </color>
+                 </brush>
+                </colorrole>
+               </disabled>
+              </palette>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+             <property name="flat">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>清空数据</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Sareapage">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <widget class="QWidget" name="widget_22" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_41">
+           <item>
+            <widget class="QLabel" name="label_49">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款类别：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SareaTypeCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>公积金贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>商业贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>组合贷款</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_38" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_42">
+           <item>
+            <widget class="QLabel" name="label_50">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算方式：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SareaWayCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>按房屋面积、单价计算</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>按贷款总额计算</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_41" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_43">
+           <item>
+            <widget class="QLabel" name="label_51">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>房屋单价：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="SareaMoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_52">
+             <property name="text">
+              <string>元/平方米</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_43" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_44">
+           <item>
+            <widget class="QLabel" name="label_53">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>房屋面积：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="SareaSizeEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个主子</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_54">
+             <property name="text">
+              <string>平方米</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_39" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_45">
+           <item>
+            <widget class="QLabel" name="label_55">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭成数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SareaPercent">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>8成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2.5成</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2成</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_44" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_46">
+           <item>
+            <widget class="QLabel" name="label_56">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭年数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SareaYearCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>25年（300期)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24年（288期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>23年（276期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>22年（264期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>21年（252期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20年（240期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年（228期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>18年（216期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>17年（204期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16年（192期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年（180期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年（168期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>13年（156期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年（144期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>11年（132期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10年（120期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9年（108期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8年（96期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7年（84期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6年（72期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5年（60期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4年（48期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3年（36期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2年（24期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1年（12期）</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="SareaRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_47">
+           <item>
+            <widget class="QLabel" name="label_16">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SareaRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="SareaRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_20">
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="SareagroupBox">
+          <property name="title">
+           <string>还款方式</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_48">
+           <item>
+            <widget class="QRadioButton" name="SareaRateBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="SareaMoneyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本金</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_19" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QPushButton" name="SareaBeginBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SareaClearBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>清空数据</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Mixpage">
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QWidget" name="widget_13" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_19">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款类别：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="MTypeCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>公积金贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>商业贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>组合贷款</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_5">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_17" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_21">
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>商业贷款额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="MSMoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>万元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="MSRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_22">
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="MSRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="MSRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_25">
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_21" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <widget class="QLabel" name="label_21">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>公积金贷款额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="MGMoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>万元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_8">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="MGRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_24">
+           <item>
+            <widget class="QLabel" name="label_26">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="MGRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="MGRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_57">
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_9">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="yearCombo_3" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_25">
+           <item>
+            <widget class="QLabel" name="label_27">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭年数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="MYearCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>25年（300期)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24年（288期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>23年（276期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>22年（264期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>21年（252期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20年（240期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年（228期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>18年（216期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>17年（204期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16年（192期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年（180期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年（168期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>13年（156期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年（144期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>11年（132期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10年（120期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9年（108期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8年（96期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7年（84期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6年（72期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5年（60期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4年（48期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3年（36期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2年（24期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1年（12期）</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_10">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="MgroupBox">
+          <property name="title">
+           <string>还款方式</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QRadioButton" name="MRateBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="MMoneyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本金</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_40" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_49">
+           <item>
+            <widget class="QPushButton" name="MBeginBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="MClearBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>清空数据</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Moneypage">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QWidget" name="widget_11" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_15">
+           <item>
+            <widget class="QLabel" name="label_10">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款类别：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GmoneyTyepCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>公积金贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>商业贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>组合贷款</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_15" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算方式：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GmoneyWayCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>按房屋面积、单价计算</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>按贷款总额计算</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_9" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_12">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="GmoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_13">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>万元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_10" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <item>
+            <widget class="QLabel" name="label_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭年数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GmoneyYearCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>25年（300期)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24年（288期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>23年（276期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>22年（264期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>21年（252期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20年（240期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年（228期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>18年（216期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>17年（204期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16年（192期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年（180期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年（168期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>13年（156期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年（144期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>11年（132期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10年（120期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9年（108期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8年（96期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7年（84期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6年（72期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5年（60期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4年（48期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3年（36期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2年（24期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1年（12期）</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_4">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="GmoneyRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <item>
+            <widget class="QLabel" name="label_58">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="GmoneyRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="GmoneyRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_59">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="GmoneygroupBox">
+          <property name="title">
+           <string>还款方式</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QRadioButton" name="GMoneyRateBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="GMoneyMoneyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本金</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_49" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_55">
+           <item>
+            <widget class="QPushButton" name="GmoneyBeginBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GmoneyClearBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>清空数据</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page">
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QWidget" name="widget_18" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <widget class="QLabel" name="label_18">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款类别：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SmoneyTypeCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>公积金贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>商业贷款</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>组合贷款</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_11">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_45" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_50">
+           <item>
+            <widget class="QLabel" name="label_60">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算方式：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SmoneyWayCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>按房屋面积、单价计算</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>按贷款总额计算</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_12">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_46" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_51">
+           <item>
+            <widget class="QLabel" name="label_61">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="SmoneyEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>请输入一个数字</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_62">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>万元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_13">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_47" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_52">
+           <item>
+            <widget class="QLabel" name="label_63">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>按揭年数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SMoneyYearCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>25年（300期)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>24年（288期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>23年（276期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>22年（264期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>21年（252期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>20年（240期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年（228期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>18年（216期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>17年（204期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>16年（192期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年（180期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年（168期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>13年（156期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年（144期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>11年（132期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>10年（120期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9年（108期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8年（96期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7年（84期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6年（72期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5年（60期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4年（48期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3年（36期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2年（24期）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1年（12期）</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_14">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeType">
+           <enum>QSizePolicy::Fixed</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QWidget" name="SmoneyRateWidget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_53">
+           <item>
+            <widget class="QLabel" name="label_64">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款利率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="SmoneyRateCombo">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <item>
+              <property name="text">
+               <string>20年3月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19年9月20日贷款市场报价利率 （LPR）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率上限 （1.05倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年10月24日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年8月26日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年6月28日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年5月11日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>15年3月1日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>14年11月22日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年7月6日基准利率</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率上限 （1.1倍）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （85折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日利率下限 （7折）</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>12年6月8日基准利率</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="SmoneyRateEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_65">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="SmoneygroupBox">
+          <property name="title">
+           <string>还款方式</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_54">
+           <item>
+            <widget class="QRadioButton" name="SMoneyRateBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本息</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="SMoneyMoneyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>等额本金</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_8" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QPushButton" name="SmoneyBeginBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>开始计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="SmoneyClearBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>清空数据</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="GareaClearBtn_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Rateresult">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QWidget" name="widget_23" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_26">
+           <item>
+            <widget class="QLabel" name="label_28">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算结果：</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="rShowSf" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_58">
+           <item>
+            <widget class="QLabel" name="label_66">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>     首付：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowSf_2">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_69">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_25" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_27">
+           <item>
+            <widget class="QLabel" name="label_34">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>每月月供：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowYg">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_70">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_26" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_28">
+           <item>
+            <widget class="QLabel" name="label_29">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowDkze">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_71">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_27" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_29">
+           <item>
+            <widget class="QLabel" name="label_30">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>支付利息：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowLx">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_72">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_24" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_30">
+           <item>
+            <widget class="QLabel" name="label_31">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>还款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowHkze">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_73">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_28" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_31">
+           <item>
+            <widget class="QLabel" name="label_32">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>还款月数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="rShowYs">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_74">
+             <property name="text">
+              <string>个月</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_29" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_32">
+           <item>
+            <widget class="QLabel" name="label_33">
+             <property name="text">
+              <string>*以上结果仅供参考</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_50" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_56">
+           <item>
+            <widget class="QPushButton" name="rateBack">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>重新计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="history2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Moneyresult">
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="QWidget" name="widget_30" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_33">
+           <item>
+            <widget class="QLabel" name="label_35">
+             <property name="font">
+              <font>
+               <pointsize>15</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>计算结果：</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="mShowSf" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_59">
+           <item>
+            <widget class="QLabel" name="label_67">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>     首付：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowSf_2">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_68">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_33" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_35">
+           <item>
+            <widget class="QLabel" name="label_36">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>首月月供：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowYg">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_48">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_37" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_36">
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>每月递减：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowDj">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_43">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_32" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_37">
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>贷款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowDkze">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_44">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_36" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_38">
+           <item>
+            <widget class="QLabel" name="label_39">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>支付利息;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowLx">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_45">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_35" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_39">
+           <item>
+            <widget class="QLabel" name="label_40">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>还款总额：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowHkze">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_46">
+             <property name="text">
+              <string>元</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_34" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_40">
+           <item>
+            <widget class="QLabel" name="label_41">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>还款月数：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="mShowYs">
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_47">
+             <property name="text">
+              <string>个月</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_31" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_34">
+           <item>
+            <widget class="QLabel" name="label_42">
+             <property name="text">
+              <string>*以上结果仅供参考</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_51" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_57">
+           <item>
+            <widget class="QPushButton" name="moneyBack">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>重新计算</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="historyBtn">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Ignored">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>历史记录</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="history">
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>350</width>
+             <height>359</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QTextBrowser" name="textBrowser"/>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_7" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_60">
+           <item>
+            <widget class="QPushButton" name="pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>返回</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
